@@ -148,6 +148,22 @@ button{cursor:pointer}
   .proof-toolbar{display:block}.proof-note{margin-top:14px}.proof-featured,.proof-grid{grid-template-columns:1fr}
   .shell{width:min(100% - 24px,1180px)}.site-header{padding-top:8px}.brand-copy span{display:none}.interactive-pill{padding:8px 10px}.interactive-pill span:last-child{display:none}.hero{padding:50px 0 74px}.hero h1{font-size:54px}.hero-copy{font-size:15px}.hero-meta{align-items:flex-start;flex-direction:column}.impact-grid,.lab-grid{grid-template-columns:1fr}.section{padding:78px 0}.case-card,.case-card.small{min-height:460px;padding:20px}.case-card.large{min-height:620px}.case-art{min-height:150px;height:150px}.case-card.large .case-art{min-height:220px;height:220px}.universe-stage{height:470px}.blackhole{width:270px;height:270px}.blackhole:before{width:390px;height:100px}.blackhole:after{width:340px;height:72px}.blackhole-card{min-height:570px}.contact-card{padding:28px}.modal-card{padding:22px}.mode-choice-grid,.privacy-list,.voice-commands{grid-template-columns:1fr}.control-dock{right:10px;bottom:10px;width:280px}.camera-widget{right:10px;bottom:155px;width:190px}.camera-widget video{height:125px}.footer{flex-direction:column}.t-top{display:block}.t-date{margin-top:9px}.cursor,#cursor-ring,#eye-dot{display:none!important}
 }
+
+/* Clarity upgrades: work by channel, brand and business output */
+.clarity-intro{display:flex;justify-content:space-between;gap:22px;align-items:flex-end;margin-bottom:24px}
+.clarity-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.clarity-card{border:1px solid var(--line);background:linear-gradient(155deg,rgba(17,24,36,.9),rgba(9,13,21,.95));border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:12px;min-height:250px}
+.clarity-card small{color:var(--cyan);font:600 9px Orbitron,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.clarity-card h3{font:600 24px/1.14 Space Grotesk,sans-serif}
+.clarity-card p{color:var(--muted);font-size:12px;line-height:1.75}
+.clarity-card .case-link-row{margin-top:auto}
+.clarity-footnote{font-size:12px;color:var(--muted);line-height:1.65;margin-top:15px}
+.skill-output-table{border:1px solid var(--line);border-radius:22px;overflow:hidden;margin-top:25px;background:rgba(12,17,25,.72)}
+.skill-output-row{display:grid;grid-template-columns:1fr 1.1fr 1.5fr;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line);align-items:start}
+.skill-output-row:last-child{border-bottom:0}.skill-output-row strong{font-size:13px}.skill-output-row span{font-size:12px;line-height:1.6;color:var(--muted)}
+.skill-output-row.head{background:rgba(98,217,255,.065)}.skill-output-row.head strong{font-size:10px;color:var(--cyan);letter-spacing:.08em;text-transform:uppercase}
+@media(max-width:900px){.clarity-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.clarity-grid{grid-template-columns:1fr}.clarity-intro{display:block}.skill-output-row{grid-template-columns:1fr;gap:5px;padding:14px}.skill-output-row.head{display:none}}
 </style>
 </head>
 <body>
@@ -163,7 +179,7 @@ button{cursor:pointer}
       <div class="brand-copy"><strong>Rutik Gadakh</strong><span>SWITCH RABBIT / PERSONAL LAB</span></div>
     </a>
     <nav class="nav-links" aria-label="Primary navigation">
-      <a href="#impact">Impact</a><a href="#work">Work</a><a href="#proof">Proof</a><a href="#universe">Skills</a><a href="#experience">Experience</a><a href="#lab">AI Lab</a><a href="#contact">Contact</a>
+      <a href="#impact">Impact</a><a href="#work">Work</a><a href="#social-work">Social Media</a><a href="#proof">Proof</a><a href="#universe">Skills</a><a href="#skill-outcomes">Skill Outputs</a><a href="#experience">Experience</a><a href="#lab">AI Lab</a><a href="#contact">Contact</a>
     </nav>
     <button class="interactive-pill" id="open-interactive"><span class="dot"></span><span>Interactive Mode</span><span>✦</span></button>
   </div>
@@ -185,7 +201,7 @@ button{cursor:pointer}
       <div class="hero-stat"><span class="n" data-count="3000" data-suffix="+">0</span><span class="l">Meta Leads / Month</span></div>
       <div class="hero-stat"><span class="n" data-count="80" data-suffix="%">0</span><span class="l">Blended CPL Reduction</span></div>
       <div class="hero-stat"><span class="n" data-count="10" data-suffix="M+">0</span><span class="l">Monthly Social Reach</span></div>
-      <div class="hero-stat"><span class="n" data-count="9" data-suffix="">0</span><span class="l">Brand Portfolio</span></div>
+      <div class="hero-stat"><span class="n" data-count="9" data-suffix="">0</span><span class="l">Brands in current campaign portfolio</span></div>
     </div>
     <div class="scroll-note">Scroll to explore</div>
   </div>
@@ -261,7 +277,34 @@ button{cursor:pointer}
       <div class="case-link-row"><button class="case-preview-btn" data-case-study="rivaan"><i class="fa-regular fa-window-maximize"></i> Preview</button><a class="case-link" href="https://www.rivaaninteriors.com" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> Website</a><a class="case-link" href="https://www.instagram.com/rivaan.interiors/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a></div>
       <div class="featured-foot"><p>I’ve kept additional campaign folders and older project references in the Proof Library below.</p></div>
     </article>
+
+    <article class="featured-card reveal">
+      <div class="card-eyebrow">Brand Portfolio / Instagram Reference</div>
+      <h3>Divine CZ</h3>
+      <p class="card-purpose"><strong>Brand reference:</strong> Divine CZ joins my brand portfolio with its dedicated Instagram presence. Campaign responsibilities and results will be shown only when supported by project evidence.</p>
+      <ul class="featured-list">
+        <li><i class="fa-solid fa-check"></i><span>Dedicated Divine CZ Instagram brand reference.</span></li>
+        <li><i class="fa-solid fa-check"></i><span>Explore the public-facing social media brand presence.</span></li>
+        <li><i class="fa-solid fa-check"></i><span>Specific strategy, deliverables and metrics can be documented as a case study.</span></li>
+      </ul>
+      <div class="case-link-row"><button class="case-preview-btn" data-case-study="divine"><i class="fa-regular fa-window-maximize"></i> Preview</button><a class="case-link" href="https://www.instagram.com/divinecz.doit/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a></div>
+      <div class="featured-foot"><p>Live brand link provided; no unverified performance claims.</p></div>
+    </article>
   </div>
+</section>
+
+
+<section class="section shell" id="social-work">
+  <div class="clarity-intro">
+    <div><div class="section-kicker reveal">03 / Social Media Work</div><h2 class="section-title reveal">What I did for each brand.</h2><p class="section-copy reveal">See social media responsibilities, content outputs and direct references by brand — not just a list of platforms.</p></div>
+  </div>
+  <div class="clarity-grid">
+    <article class="clarity-card reveal"><small>Multi-channel social strategy</small><h3>Doit Industries</h3><p><strong>Work:</strong> Product content, launch and exhibition campaigns, short-form video, community enquiries, cross-platform publishing and social performance analysis.</p><p><strong>Outputs:</strong> Social artworks, reels, stories, campaign messaging and analytics reviews.</p><div class="case-link-row"><a class="case-link" href="https://www.instagram.com/doit_industries_limited" target="_blank" rel="noopener">See Instagram ↗</a><button class="case-preview-btn" data-case-study="doit">Case study</button></div></article>
+    <article class="clarity-card reveal"><small>Website + Social media</small><h3>Rivaan Interiors</h3><p><strong>Work:</strong> Website development and social media presence.</p><p><strong>Outputs:</strong> Live website and Instagram presence, with detailed campaign metrics to be documented.</p><div class="case-link-row"><a class="case-link" href="https://www.instagram.com/rivaan.interiors/" target="_blank" rel="noopener">See Instagram ↗</a><button class="case-preview-btn" data-case-study="rivaan">Case study</button></div></article>
+    <article class="clarity-card reveal"><small>Social media execution</small><h3>Gravity Zone</h3><p><strong>Work:</strong> Earlier social media execution associated with Zen Entertainment.</p><p><strong>Outputs:</strong> Live Instagram portfolio reference. Campaign-specific results not yet documented.</p><div class="case-link-row"><a class="case-link" href="https://www.instagram.com/gravityzoneofficial/" target="_blank" rel="noopener">See Instagram ↗</a><button class="case-preview-btn" data-case-study="gravity">Case study</button></div></article>
+    <article class="clarity-card reveal"><small>New brand addition</small><h3>Divine CZ</h3><p><strong>Brand:</strong> Dedicated Instagram page <strong>@divinecz.doit</strong>.</p><p><strong>Scope / outputs:</strong> To be documented from actual work; no unverified campaign or account-management claims added.</p><div class="case-link-row"><a class="case-link" href="https://www.instagram.com/divinecz.doit/" target="_blank" rel="noopener">See Instagram ↗</a><button class="case-preview-btn" data-case-study="divine">Preview</button></div></article>
+  </div>
+  <p class="clarity-footnote">For every brand, the next layer of proof can show the objective → strategy → content produced → platform → measurable outcome. Only verified metrics should appear as results.</p>
 </section>
 
 <section class="section shell" id="proof">
@@ -299,7 +342,7 @@ button{cursor:pointer}
 
   <div class="archive-bar reveal">
     <div class="archive-bar-copy">
-      <div class="archive-count">16 archived references</div>
+      <div class="archive-count">16 archived references · Divine CZ added separately</div>
       <strong>Older client & project links</strong>
       <span>I’ve kept these older references available for anyone who wants to explore more of my past work.</span>
     </div>
@@ -342,6 +385,22 @@ button{cursor:pointer}
       <div class="skill-row"><strong>Automation & AI</strong><p>I use AI and automation to improve workflows, execution speed and the way I approach digital experiences.</p></div>
       <div class="skill-row"><strong>Creative + Analytics</strong><p>I connect creative thinking with analytics so messaging and execution are guided by real performance data.</p></div>
     </div>
+  </div>
+</section>
+
+
+<section class="section shell" id="skill-outcomes">
+  <div class="section-kicker reveal">Skills applied in real projects</div><h2 class="section-title reveal">The skill, the brand, the output.</h2>
+  <p class="section-copy reveal">A straightforward view alongside the interactive Marketing Universe. This makes the work readable even without hovering over planets.</p>
+  <div class="skill-output-table reveal">
+    <div class="skill-output-row head"><strong>Skill / Channel</strong><strong>Brand / Work</strong><strong>Deliverables / Business application</strong></div>
+    <div class="skill-output-row"><strong>Performance Marketing</strong><span>Doit, Esynergies, Omved</span><span>Meta / Google / LinkedIn campaigns, targeting, retargeting, lead-generation optimisation</span></div>
+    <div class="skill-output-row"><strong>Social Media</strong><span>Doit, Rivaan, Gravity Zone</span><span>Content planning, publishing, short-form content, community engagement and social presence</span></div>
+    <div class="skill-output-row"><strong>Shopify & E-commerce</strong><span>Cosmekor, Omved</span><span>Store build, merchandising, marketplace operations and full-funnel marketing</span></div>
+    <div class="skill-output-row"><strong>Website & SEO</strong><span>Rivaan, Doit, Zen Entertainment</span><span>Website development, search visibility and digital experience</span></div>
+    <div class="skill-output-row"><strong>CRM & B2B Outreach</strong><span>Doit, CloudRoute Solutions</span><span>Lead tracking, follow-up workflows, segmentation, Apollo.io and cold-email campaigns</span></div>
+    <div class="skill-output-row"><strong>Marketing Leadership</strong><span>Doit Industries</span><span>Team coordination, campaign planning, reporting and multi-brand execution</span></div>
+    <div class="skill-output-row"><strong>Brand Reference</strong><span>Divine CZ</span><span>Instagram brand link added; specific skills and deliverables awaiting documented project scope</span></div>
   </div>
 </section>
 
@@ -601,6 +660,18 @@ $('#settings-recalibrate').addEventListener('click',()=>{hideModal('interaction-
 
 /* ===== Case study previews ===== */
 const CASE_STUDIES={
+  divine:{
+    eyebrow:'Brand Portfolio / Divine CZ',
+    title:'Divine CZ — Instagram brand reference.',
+    summary:'Divine CZ is included as an additional brand in my portfolio, with a direct link to its Instagram presence.',
+    role:'Specific account responsibilities are yet to be documented from project evidence.',
+    work:['Added the official Instagram reference provided for Divine CZ.','Campaign strategy, content deliverables and channel ownership can be added when verified.'],
+    impact:[['Instagram','Live brand reference'],['Pending','Verified performance data']],
+    proof:'The supplied Instagram profile is the available public reference.',
+    tech:['Instagram'],
+    actions:[{label:'Divine CZ Instagram',type:'link',value:'https://www.instagram.com/divinecz.doit/'}],
+    note:'No unverified ownership, leads, sales, reach or growth claims are made.'
+  },
   doit:{
     eyebrow:'Current Role / Doit Industries',
     title:'Multi-brand growth at operating scale.',
